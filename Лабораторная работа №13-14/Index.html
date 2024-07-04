@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Combined Tasks</title>
+    <style>
+        #element-to-style {
+            color: black;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            border: none;
+        }
+
+        #element-to-style:hover {
+            color: blue;
+            font-family: Verdana;
+            font-size: 25px;
+            border: 1px solid green;
+        }
+    </style>
+    <script>
+        function showURL() {
+            const url = window.location.href;
+            alert("Current URL: " + url);
+        }
+
+        function removeElement() {
+            const element = document.getElementById("element-to-remove");
+            element.remove();
+        }
+
+        function getComputerName() {
+            const name = "Имя компьютера: " + navigator.userAgent;
+            const newWindow = window.open("", "", "width=300,height=500,scrollbars=yes,status=no");
+            newWindow.document.write("<p>" + name + "</p>");
+        }
+
+        function validateForm() {
+            const form = document.getElementById("userForm");
+            const name = form.elements["name"].value;
+            const email = form.elements["email"].value;
+            const age = form.elements["age"].value;
+
+            let isValid = true;
+            let errorMessage = "";
+
+            if (!name) {
+                isValid = false;
+                errorMessage += "Поле имени должно быть заполнено.\n";
+            }
+
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                isValid = false;
+                errorMessage += "Email должен быть в правильном формате.\n";
+            }
+
+            if (age < 18 || age > 100) {
+                isValid = false;
+                errorMessage += "Возраст должен быть между 18 и 100.\n";
+            }
+
+            if (!isValid) {
+                alert(errorMessage);
+                return false;
+            }
+
+            alert("Форма успешно отправлена!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="element-to-remove" onclick="removeElement()">Мадекша
+        
+    </h1>
+    <p><a href="https://example.com">Мой любимый сайт</a></p>
+    <img src="img1.jpg" alt="Пример изображения">
+    <button onclick="showURL()">Посмотреть URL</button>
+    <button onclick="getComputerName()">Получить имя компьютера</button>
+
+    <h2 id="element-to-style">Этот элемент будет стилизован при наведении</h2>
+
+    <form id="userForm" onsubmit="return validateForm()">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

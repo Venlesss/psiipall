@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .product-page {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product-images {
+            display: flex;
+            flex-direction: row; /* Горизонтальное расположение миниатюрных изображений и основного изображения */
+            align-items: flex-start; /* Выравнивание по верхнему краю */
+        }
+
+        .thumbnail-container {
+            display: flex;
+            flex-direction: column; /* Вертикальное расположение миниатюрных изображений */
+            align-items: center; /* Выравнивание по центру */
+            margin-right: 20px; /* Отступ между миниатюрами и основным изображением */
+        }
+
+        .thumbnail-container .thumbnail {
+            width: 80px; /* Размер маленьких изображений */
+            height: auto;
+            margin-bottom: 10px; /* Отступ между миниатюрными изображениями */
+            cursor: pointer; /* Указатель при наведении */
+        }
+
+        .product-images .main {
+            width: 300px; /* Размер основного изображения */
+            height: auto;
+        }
+
+        .product-details {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        .product-details h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 20px;
+            color: #b12704;
+            margin-bottom: 10px;
+        }
+
+        .sku {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .size-options button {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .size-options button:hover {
+            border-color: #000;
+        }
+
+        .category, .size, .stock {
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .add-to-cart:hover {
+            background: #e6b800;
+        }
+
+        .tags {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-page">
+        <div class="product-images">
+            <div class="thumbnail-container">
+                <img src="Рисунок2.png" alt="Shoe Image 2" class="thumbnail">
+                <img src="Рисунок3.png" alt="Shoe Image 3" class="thumbnail">
+                <img src="Рисунок4.png" alt="Shoe Image 4" class="thumbnail">
+            </div>
+            <img src="Рисунок1.png" alt="Shoe Image 1" class="main">
+        </div>
+        <div class="product-details">
+            <h1>Кроссовки Prien Birkenstock FootPrints</h1>
+            <p class="price">4 450 ₽</p>
+            <p class="sku">Артикул: 051753</p>
+            <div class="size-options">
+                <button>Стандартная стопа</button>
+                <button>Широкая стопа</button>
+            </div>
+            <p class="category">Категория: Туфли</p>
+            <p class="size">Размер: <select>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+            </select></p>
+            <p class="stock">В наличии: 5</p>
+            <button class="add-to-cart">В корзину</button>
+            <div class="tags">
+                <p>Метки: Кожаная обувь, Кожаные мужские туфли, Коричневые мужские туфли, Мужские осенние туфли, Туфли мужские на шнурках</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

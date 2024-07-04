@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .box {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            flex: 1 1 25%;
+            box-sizing: border-box;
+        }
+        .box-1 { flex: 1 1 100%; }
+        .box-2 { flex: 1 1 100%; }
+        .box-3 { flex: 1 1 100%; }
+        .box-4 { flex: 1 1 50%; }
+        .box-5 { flex: 1 1 50%; }
+        .box-6 { flex: 1 1 50%; }
+        .box-7 { flex: 1 1 50%; }
+        .box-8 { flex: 1 1 50%; }
+        .box-9 { flex: 1 1 50%; }
+        .box-10 { flex: 1 1 100%; }     
+        @media (max-width: 600px) {
+            .box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+    <title>Макет</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">1.Шапка header</div>
+        <div class="box box-2">Блок 1</div>
+        <div class="box box-3">Блок 2</div>
+        <div class="box box-4">Блок 3</div>
+        <div class="box box-5">Блок 4</div>
+        <div class="box box-6">Блок 5</div>
+        <div class="box box-7">Блок 6</div>
+        <div class="box box-8">Блок 7</div>
+        <div class="box box-9">Блок 8</div>
+        <div class="box box-10">9.Слайдер</div>
+        <div class="box box-11">10.Подвал Footer</div>
+
+    </div>
+</body>
+</html>

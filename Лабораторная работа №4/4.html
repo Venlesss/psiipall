@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Моя сайт-визитка</title> 
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #8fe57e;
+    }
+    
+    img {
+      border-radius: 10%;
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+    
+    .skills {
+      margin-top: 20px;
+    }
+    
+    .skills ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .skills li {
+      display: inline-block;
+      margin-right: 10px;
+      background-color: #FFFFFF;
+      padding: 5px 10px;
+      color: #000000;
+      border-radius: 5px;
+      border: 1px solid #000000;  
+    }
+    
+
+    .table td, tr {
+      color: #000000  ;
+      background-color: #FFFFFF;
+      border: 1px solid #000000;
+    }
+    
+    .projects h3 {
+      color: #333;
+    }
+    
+    .projects ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .projects li {
+      margin-bottom: 10px;
+    }
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh; /* выравниваем по вертикали по высоте окна */
+    }
+    
+    .login-form {
+      max-width: 300px;
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background-color: #8fe57e;
+    }
+    
+    .login-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .login-form input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .login-form button:hover {
+      background-color: #333;
+    }
+
+    table {
+      background-color: #FFFFFF;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      color: #d6c1c1; 
+
+    }
+
+    table, th, td {
+      border: 1px solid #d6c1c1;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      color: #d6c1c1;
+    }
+
+    .white-bg {
+      background-color:#333;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #FFFFFF;
+      color: #000000;
+      border: 1px solid #000000;
+    }
+  </style>
+</head>  
+<body>
+  <h1>Мадекша Алексей</h1>
+  <img src="img1.jpg" alt="Моя фотография" style="width: 200px; height: auto;">
+  <video src="video1.mp4" controls></video>
+  <audio src="audio1.ogg" controls></audio>
+  
+  <br><b>Желаемая должность:</b> Техник-программист, Веб-дизайнер.</br>
+  <br><b>Желаемый уровень дохода:</b> от 9999 рублей.</br>
+  <br></br>
+  <b>Дата рождения:</b> 12.10.2005 г.
+  <br></br>
+  <b>Проживание:</b> Беларусь, город Гродно, улица Огинского 29-40.
+  
+  <div class="contact-info">
+    <h3>Контактная информация:</h3>
+    <br>Email: lexamed112233@gmail.com</br>
+    <br>Телефон: +375 (29) 868-76-06</br>
+  </div>
+  
+  <div class="skills">
+    <h3>Ключевые знания и навыки</h3>
+    <br><b>Языки программирования которые знаю:</b></br>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Python</li>
+      <li>PascalABC</li>
+      <li>C#</li>
+      <li>Delphi</li>
+      <li>PHP</li>
+    </ul>
+    <br><b>Умею пользоваться такими программами как:</b></br>
+  </div>
+
+  <div class="table">
+    <table>
+    <tr>
+      <td rowspan="2">Adobe Photoshop</td>
+      <td class="white-bg">Microsoft Office</td>
+      <td>Adobe Illustrator</td>
+    </tr>
+    <tr>
+      <td class="white-bg">VS Code</td>
+    </tr>
+    <tr>
+        <td colspan="3">Figma</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="works">
+    <h3>Опыт работы:</h3>
+    <b>20.09.2022 - 12.12.2022</b> Учебная практика, оператор ЭВМ.
+    <br>Получил 5 разряд</br>
+    <hr>
+   <ul>
+     <li>Научился быстро печатать</li>
+     <li>Научился пользоваться профессионально Microsoft Office</li>
+     <li>Научился работать в программе Adobe Illustrator</li>
+   </ul>
+   <hr>
+   <br></br>
+   <b>26.09.2023 - 10.12.2023</b> Учебная практика на производстве.
+    <br>Получил 9 из 10 от работодателя</br>
+    <hr>
+   <ul>
+     <li>Научился создавать сайт</li>
+     <li>Научился писать документацию для проекта</li>
+   </ul>
+   <hr>
+  </div>
+  
+  <div class="projects">
+    <h2>Проекты</h2>
+    Мои проекты по ссылке: 
+    <a href="https://github.com/Venlesss?tab=repositories">Перейти на github</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Моя сайт-визитка. Все права защищены.</p>
+  </footer>
+
+  <div class="login-container">
+    <div class="login-form">
+      <form action="/login" method="POST">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+  </div>  
+</body>
